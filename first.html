@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .carousel{
+           margin: 100px auto;
+           width: 80%;
+           border: 5px solid #f6f2f2;
+           display: flex;
+           overflow-x: auto;
+           gap: 1em;
+        }
+
+        .group{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 1em;
+            animation: spin 10s  infinite linear;
+            padding-right:  1em;
+
+        }
+        .carousel::-webkit-scrollbar{
+            display: none;
+        }
+        .card{
+            flex:0 0 auto;
+            height: 5em;
+            padding:1em;
+            background: #000;
+            font-size: 3rem;
+            border-radius: .2em;
+            text-align: center;
+            align-content:center;
+        }
+        @keyframes spin{from{translate: 0;}to{translate:-100%;}}
+    </style>
+</head>
+<body>
+    <div class="carousel">
+       <div  class="group">
+            <div class="card"><img src="https://i.pinimg.com/736x/57/fc/d8/57fcd8b0aaa63f4218c10bd7270b1ba2.jpg" alt="Image 1"></div>
+            <div class="card"><img src="https://i.pinimg.com/736x/d2/3b/d8/d23bd8804ebc19e102f1a205e1970b22.jpg" alt="Image 2"></div>
+            <div class="card"><img src="https://i.pinimg.com/736x/55/d6/84/55d684b348993f5cd2d5afa6cda1961f.jpg" alt="Image 3"></div>
+            <div class="card"><img src="https://i.pinimg.com/736x/6b/de/e3/6bdee359d46b68a17c1490e7574afe17.jpg" alt="Image 4"></div>
+            <div class="card"><img src="https://i.pinimg.com/736x/de/e1/ac/dee1acf89d52c4aa6fb8b473777856f4.jpg" alt="Image 5"></div>
+            <div class="card"><img src="https://i.pinimg.com/736x/ec/19/5e/ec195e3a258d0e9c360fa1ece02ad49c.jpg" alt="Image 6"></div>
+            <div class="card"><img src="https://i.pinimg.com/736x/20/84/54/208454ead53276d5231dad7e8615b699.jpg" alt="Image 7"></div>
+        </div>
+
+    </div>
+    
+</body>
+</html>
